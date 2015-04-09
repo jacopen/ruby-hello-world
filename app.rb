@@ -34,6 +34,10 @@ get '/' do
   erb :main
 end
 
+get '/ingress' do
+  erb :ingress
+end
+
 get '/keys' do
   a={}
   KeyPair.all.each do |v|
